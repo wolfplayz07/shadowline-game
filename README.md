@@ -1,7 +1,13 @@
 # SHADOWLINE
 
-Grok-made third-person campaign.
+Grok-made first-person campaign.
 
-Play: open this repo's index.html or https://cdn.jsdelivr.net/gh/wolfplayz07/shadowline-game@main/index.html
+## Play (tap this, do not use the raw GitHub file view)
 
-Turn the phone sideways. If the host stays portrait, the game rotates itself to landscape.
+**https://cdn.jsdelivr.net/gh/wolfplayz07/shadowline-game@main/index.html**
+
+Backup: https://raw.githack.com/wolfplayz07/shadowline-game/main/index.html
+
+Turn the phone sideways. Stick left, drag right to look, FIRE to shoot.
+
+Clicking `index.html` on github.com only shows source. Use the jsDelivr link above.

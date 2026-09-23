@@ -1,13 +1,11 @@
 # SHADOWLINE
 
-Grok-made first-person campaign.
+First-person campaign. Share this play link:
 
-## Play (tap this, do not use the raw GitHub file view)
+**Play:** https://htmlpreview.github.io/?https://github.com/wolfplayz07/shadowline-game/blob/main/index.html
 
-**https://cdn.jsdelivr.net/gh/wolfplayz07/shadowline-game@main/index.html**
+**Backup play:** https://cdn.jsdelivr.net/gh/wolfplayz07/shadowline-game@main/index.html
 
-Backup: https://raw.githack.com/wolfplayz07/shadowline-game/main/index.html
+**Pages (if enabled):** https://wolfplayz07.github.io/shadowline-game/
 
-Turn the phone sideways. Stick left, drag right to look, FIRE to shoot.
-
-Clicking `index.html` on github.com only shows source. Use the jsDelivr link above.
+Turn sideways. Stick to move. Swipe to look. FIRE.

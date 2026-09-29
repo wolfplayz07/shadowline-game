@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
 <title>SHADOWLINE</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;user-select:none}
@@ -63,7 +64,7 @@ h2{font-size:clamp(22px,6vw,36px);margin-bottom:10px}
 <p class="tag">FIRST-PERSON CAMPAIGN</p>
 <p class="log">GHOST UNIT // SGT. KANE</p>
 <button id="start" class="cta">INITIATE DEPLOYMENT</button>
-<p class="hint">Turn sideways. Stick to move. Swipe to look. FIRE.</p>
+<p class="hint">Turn sideways. Stick to move. Swipe to look. FIRE. Bookmark this page — updates load themselves.</p>
 </div></section>
 <section id="brief" class="screen hidden"><div>
 <div class="op" id="bcode">FILE 01 / 03</div>
@@ -87,6 +88,18 @@ h2{font-size:clamp(22px,6vw,36px);margin-bottom:10px}
 <button id="home" class="cta">TITLE</button>
 </div></section>
 </div>
-<script src="game.js"></script>
+<script>
+(function(){
+  var s=document.createElement('script');
+  function load(url){s.src=url;document.body.appendChild(s);}
+  fetch('https://api.github.com/repos/wolfplayz07/shadowline-game/commits/main')
+    .then(function(r){return r.json();})
+    .then(function(j){
+      var sha=(j&&j.sha)?j.sha:'main';
+      load('https://cdn.jsdelivr.net/gh/wolfplayz07/shadowline-game@'+sha+'/game.js');
+    })
+    .catch(function(){ load('game.js'); });
+})();
+</script>
 </body>
 </html>
